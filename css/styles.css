@@ -938,11 +938,17 @@ border: 1px solid var(--color-logo-btn-accent);
   height: 15px;
   margin-right: 8px;
   vertical-align: middle;
-  background-image: url(../images/mainpage/icon-policy-border.svg);
+  border: 2px solid var(--color-text-body-icon-bg);
+  border-radius: 4px;
 }
 .contact-form-policy-input:checked + .contact-form-label-policy::before {
- background-image: url(../images/mainpage/icon-policy-tip.svg);
- }
+  background-image: url(../images/mainpage/icon-policy-tip.svg);
+  fill: var(--color-text-body-icon-bg);
+  }
+  .contact-form-policy-input:focus + .contact-form-label-policy::before {
+  border: 2px solid var(--color-logo-btn-accent);
+  border-radius: 4px;
+  }
 .contact-form-btn {
   display: block;
   min-width: 200px;
